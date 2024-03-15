@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: 100%;
+
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .btn-custom {
+      background: linear-gradient(45deg, #FFC107, #FF9800);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom:hover {
+      background: linear-gradient(45deg, #FF9800, #FFC107);
+      color: white;
+      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4">Hello, Student</h1>
+    <p class="lead">Welcome to Online Quiz</p>
+    <hr class="my-4">
+    <p>You can access various features after Login.</p>
+    <p class="lead">
+      <a class="btn btn-custom btn-lg" href="studentlogin" role="button">Login</a>
+      <a class="btn btn-custom btn-lg" href="studentsignup" role="button">Sign Up</a>
+    </p>
+    <br><br><br><br><br><br>
+  </div>
+ 
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
